@@ -1,7 +1,4 @@
-# Ind_577_Final_project
-This is my final project for Ind 577 in Rice
-
-# INDE 577 — Data Science and Machine Learning
+# Final project for INDE 577 — Data Science and Machine Learning
 
 ### Student: Zhikang Liu
 
