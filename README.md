@@ -10,6 +10,8 @@
 
 ### Stucture:
 
+- **README.md**
+
 - **Supervised Learning**:
     - Model Building and Error Analysis
     - Linear Regression
@@ -40,4 +42,10 @@ Each student will build a Github repository throughout the semester and this rep
 * [10 points] README files are included in each subdirectory clearly explaining the algorithm being implemented as well as explaining the data that it is being used.
 
 Course grades will be assigned in the typical manor,  100 - 90 points (A), 89 - 80 points (B), 79 - 70 points (C), 69-60 points (D), 59 - 0 (F).
+
+
+
+
+
+ 
  
