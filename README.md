@@ -13,14 +13,14 @@
 - **README.md**
 
 - **Supervised Learning**:
-    - Model Building and Error Analysis
-    - Linear Regression
+    - The Perceptron
     - Gradient Descent
+    - Linear Regression
     - Logistic Regression
-    - Neural Nets
+    - Neural Networks
     - Support Vector Machines
-    - k-Nearest Neighbors
-    - Decision/ Regression Trees
+    - K-Nearest Neighbors
+    - Decision Trees
     - Ensemble Learning
 
 - **Unsupervised Learning**:
