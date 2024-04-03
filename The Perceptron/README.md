@@ -5,7 +5,37 @@ The perceptron is a single neuron model with sign activation function as depicte
 A perceptron takes several binary inputs, multiplies each by a weight, sums them up, adds a bias (also known as the intercept), 
 and then passes the sum through an activation function to produce a single binary output.
 
-1.Inputs ($x^{(i)}_1, x^{(i)}_2$): These are the input features for a given training example $i$.
+# Inputs
+The inputs to the perceptron are denoted as 
+
+
+
+1 & \text{if } z \geq 0 \\
+-1 & \text{if } z < 0
+\end{cases} $$
+### Output:
+- \( \hat{y}^{(i)} \): The predicted output for the ith training example, which is the result of applying the activation function to \( z \).
+$$ \hat{y}^{(i)} = \phi(z) $$
+---
+**Example**:
+Let's say we have a perceptron that determines whether an email is spam (output 1) or not spam (output -1), with the inputs being specific features detected in the email:
+- \( x^{(i)}_1 \): Presence of the word "deal" (1 if present, 0 if not)
+- \( x^{(i)}_2 \): Frequency of uppercase letters (normalized to a value between 0 and 1)
+Given weights and bias:
+- \( w_1 = 0.5 \)
+- \( w_2 = 0.5 \)
+- \( b = -0.7 \)
+For an email that contains the word "deal" and has a high frequency of uppercase letters (let's say \( x^{(i)}_2 = 0.8 \)):
+The pre-activation calculation would be:
+$$ z = (0.5 \times 1) + (0.5 \times 0.8) - 0.7 = 0.3 $$
+Since \( z = 0.3 \) is greater than 0, the activation function will output 1:
+$$ \hat{y}^{(i)} = \phi(0.3) = 1 $$
+The email would be classified as spam according to the perceptron's decision boundary.
+
+
+
+
+
 
 2.Weights ($w_1, w_2$): Each input feature has an associated weight which indicates the strength of the influence of that feature on the output. 
 
