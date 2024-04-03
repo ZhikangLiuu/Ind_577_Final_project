@@ -6,7 +6,7 @@ A perceptron takes several binary inputs, multiplies each by a weight, sums them
 and then passes the sum through an activation function to produce a single binary output.
 
 # Inputs
-The inputs to the perceptron are denoted as $$x_1$$
+The inputs to the perceptron are denoted as $x_1$
 
 
 
