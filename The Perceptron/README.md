@@ -28,6 +28,7 @@ Given weights and bias:
 - $w_1 = 0.5$
 - $w_2 = 0.5$
 - $b = -0.7$
+  
 For an email that contains the word "deal" and has a high frequency of uppercase letters (let's say $x^{(i)}_2 = 0.8$):
 The pre-activation calculation would be:
 $$z = (0.5 \times 1) + (0.5 \times 0.8) - 0.7 = 0.3 $$
