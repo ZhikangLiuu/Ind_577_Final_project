@@ -7,7 +7,7 @@ and then passes the sum through an activation function to produce a single binar
 
 ## Illustration
 
-- Inputs ( $x^{i}_1,x^{i}_2$ ):The inputs to the perceptron are denoted as $x^{i}_1$ and $x^{i}_2$ 
+- Inputs ( $x^{(i)}_1,x^{(i)}_2$ ):The inputs to the perceptron are denoted as $x^{(i)}_1$ and $x^{(i)}_2$ 
 
 - Weights ( $w_1, w_2$ ): Each input feature has an associated weight which indicates the strength of the influence of that feature on the output. 
 
