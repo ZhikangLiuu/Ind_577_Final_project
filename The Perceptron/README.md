@@ -37,6 +37,7 @@ The Perceptron has found various applications across different fields. Some of t
 Let's say we have a perceptron that determines whether an email is spam (output 1) or not spam (output -1), with the inputs being specific features detected in the email:
 - $x^{(i)}_1$: Presence of the word "deal" (1 if present, 0 if not)
 - $x^{(i)}_2$: Frequency of uppercase letters (normalized to a value between 0 and 1)
+  
 Given weights and bias:
 - $w_1 = 0.5$
 - $w_2 = 0.5$
