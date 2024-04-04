@@ -37,7 +37,7 @@ The email would be classified as spam according to the perceptron's decision bou
 
 
 
-# Weights ($w_1, w_2$): Each input feature has an associated weight which indicates the strength of the influence of that feature on the output. 
+- Weights ($w_1, w_2$): Each input feature has an associated weight which indicates the strength of the influence of that feature on the output. 
 
 3.Bias ($b$): This is similar to the intercept term in a linear equation. It allows the activation threshold to be adjusted.
 
