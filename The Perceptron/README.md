@@ -7,7 +7,7 @@ and then passes the sum through an activation function to produce a single binar
 
 ## Illustration
 
-- Inputs ($x^{i}_(1),x^{i}_(2)$):The inputs to the perceptron are denoted as $x^{i}_1$ and $x^{i}_2$ 
+- Inputs ($x^{i}_1,x^{i}_2$):The inputs to the perceptron are denoted as $x^{i}_1$ and $x^{i}_2$ 
 
 - Weights ($w_1, w_2$): Each input feature has an associated weight which indicates the strength of the influence of that feature on the output. 
 
@@ -15,7 +15,7 @@ and then passes the sum through an activation function to produce a single binar
 
 - Pre-Activation ($z$): This is the weighted sum of the inputs plus the bias, which is the computation before the activation function is applied. Mathematically, this is represented as: 
 $$ z= w_1x^{i}_1+w_2x^{i}_2+b $$
-- Activation Function ( $\phi(z)$ ): The perceptron uses an activation function to transform the weighted sum into an output. If output will be 1 if $z$ is 0 or postive and will be -1 if $z$ is negetive.
+- Activation Function ($\phi(z)$): The perceptron uses an activation function to transform the weighted sum into an output. If output will be 1 if $z$ is 0 or postive and will be -1 if $z$ is negetive.
 
 - Output ($\hat{y}^{(i)}$): This is the final prediction of the perceptron for the input example $i$.
 
