@@ -22,9 +22,13 @@ and then passes the sum through an activation function to produce a single binar
 The Perceptron has found various applications across different fields. Some of the key applications of the Perceptron include:
 
 - Pattern Recognition: One of the earliest applications of perceptrons was in pattern recognition tasks. For instance, perceptrons have been used to classify handwritten characters in optical character recognition (OCR) systems.
+  
 - Binary Classification: Perceptrons are particularly suited for binary classification tasks where the goal is to classify input data into one of two categories. For example, perceptrons can be employed in spam email detection systems to classify emails as either spam or non-spam.
+  
 - Medical Diagnosis: Perceptrons have been utilized in medical diagnosis applications, such as classifying medical images to identify the presence of diseases or anomalies.
+  
 - Predictive Modeling: Perceptrons can be used for predictive modeling in various domains, including finance, marketing, and engineering. They can help predict outcomes based on input features, aiding in decision-making processes.
+  
 - Signal Processing: Perceptrons can be applied in signal processing tasks, such as filtering noisy signals or detecting patterns in time-series data.
 
 
