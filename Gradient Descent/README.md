@@ -10,7 +10,7 @@ this function. It is like you are on a hill and you have to walk down the slope 
 
 There are some steps of this algorithm：
 - find the slope of initial point $f'(w) = 2(w - 2)$
-- set your arriving point $$w_{n+1} = w_n - \alpha f'(w_n) $$
+- set your arriving point $$w_{n+1} = w_n - \alpha f'(w_n) $$(noting $\alpha$ is setted by yourself)
 - compute and get $w_{n+1}$
 - repeat untill it reaches your stopping condition
 
