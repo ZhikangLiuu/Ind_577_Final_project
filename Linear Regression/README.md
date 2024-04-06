@@ -97,3 +97,11 @@ The most common way work around for this problem is to update $w_1$ and $b$ by c
 3. Calculate $\frac{\partial C(w_1, b; \mathbf{x}^{(i)}, y^{(i)})}{\partial w_1}$ and $\frac{\partial C(\partial C(w_1, b; \mathbf{x}^{(i)}, y^{(i)}))}{\partial b}$.
 2. $w \leftarrow w - \alpha \frac{\partial C(w_1, b; \mathbf{x}^{(i)}, y^{(i)})}{\partial w_1}$
 3. $b \leftarrow b - \alpha \frac{\partial C(w_1, b; \mathbf{x}^{(i)}, y^{(i)})}{\partial b}$
+
+## Application
+
+- Property Price Prediction: Regression models estimate property prices based on features such as location, size, age, and amenities. This helps buyers, sellers, and real estate agents make better-informed decisions.
+
+- Quality Control: Regression models can predict the quality of products based on the manufacturing parameters. This helps in maintaining high standards and reducing waste.
+
+- Pollution Levels Forecasting: Environmental agencies predict pollution levels to inform public health advisories and policy-making.
