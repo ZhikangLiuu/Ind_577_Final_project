@@ -33,3 +33,6 @@ plt.legend(fontsize = 15)
 plt.title("My Regression Data", fontsize = 18)
 plt.show()
 ```
+
+![image](https://github.com/ZhikangLiuu/Ind_577_Final_project/assets/165843914/4831a2c7-bc99-4511-9793-b9b5ebe85383)
+
