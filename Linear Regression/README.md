@@ -4,10 +4,10 @@ Let $\mathcal{X}$ be the space of all possible feature vectors, let $\mathcal{Y}
 
 ![image](https://github.com/ZhikangLiuu/Ind_577_Final_project/assets/165843914/423f171b-6ab8-499e-a058-b58552213b81)
 
-In summary, our goal is to approxiate this function $f(x)=y$ with mechine learning way.
+
 In [regression](https://favtutor.com/blogs/types-of-regression), machine learning models are given labeled data $\mathcal{D} = \{(\mathbf{x}^1, y^1), \dots, (\mathbf{x}^N, y^N)\}$, where the feature vectors satisfy $\mathbf{x}^{(i)} \in \mathbb{R}$ and the target labels satify $y^{(i)} \in \mathbb{R}$. Thus, this supervised learning task seeks to predict real valued target labels. This is different from classification (such as the perceptron single neuron model) as the following figure suggests.
 
-We will focus on **linear regression**. This specific case of regression assumes that the target values in $\mathcal{Y}$ are approximated by a linear function of the associated feature vectors. That is, the optimal target function $f:\mathcal{X} \rightarrow \mathcal{Y}$ is assumed the be roughly a linear function. 
+We will focus on **linear regression**. This specific case of regression assumes that the target values in $\mathcal{Y}$ are approximated by a linear function of the associated feature vectors. In summary, our goal is to approxiate this function $f(x)=y$ with mechine learning way.
 
 
 
