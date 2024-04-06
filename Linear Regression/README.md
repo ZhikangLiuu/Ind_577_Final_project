@@ -9,9 +9,6 @@ In [regression](https://favtutor.com/blogs/types-of-regression), machine learnin
 
 We will focus on **linear regression**. This specific case of regression assumes that the target values in $\mathcal{Y}$ are approximated by a linear function of the associated feature vectors. In summary, our goal is to approxiate this function $f(x)=y$ with mechine learning way.
 
-
-
-![image](https://github.com/ZhikangLiuu/Ind_577_Final_project/assets/165843914/4831a2c7-bc99-4511-9793-b9b5ebe85383)
 ![image](https://github.com/ZhikangLiuu/Ind_577_Final_project/assets/165843914/b42f6015-2799-426a-8538-a6f0476c5b1b)
 
 ## Algorithm
