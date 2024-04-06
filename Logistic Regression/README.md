@@ -114,7 +114,12 @@ $$
 
 Notice how these partial derivatives precisely match the partial derivatives of the linear regression single neuron and the approximate partial derivatives of the Perceptron single neuron! Thus, we can train our logistic regression neuron in the exact same way as our previous models by implementing stochastic gradient descent. We now define our custom single neuron class for this purpose. 
 ach feature vector. 
- 
+
+### Application
+
+- Disease Prediction: Logistic regression can predict the likelihood of a patient having a particular disease based on symptoms, medical history, and diagnostic test results. For example, predicting the likelihood of heart disease based on risk factors like cholesterol levels, blood pressure, and age.
+- Default Risk Prediction: Financial institutions use logistic regression to assess the creditworthiness of individuals and businesses by predicting the likelihood of default on loans or credit card payments based on financial history, income, debt-to-income ratio, and other relevant factors.
+- Employee Attrition Prediction: Logistic regression models can predict the likelihood of an employee leaving the company based on factors such as job satisfaction, salary, tenure, and performance evaluations. This helps HR departments identify retention strategies and address potential issues proactively.
 
 
 ---
