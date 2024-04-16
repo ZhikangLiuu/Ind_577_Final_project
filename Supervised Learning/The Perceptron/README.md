@@ -8,16 +8,16 @@ and then passes the sum through an activation function to produce a single binar
 
 ## Model Structure
 A Perceptron is a binary classifier that maps its input $x$ (a vector of real numbers) to an output value $f(x)$ which is typically binary (0 or 1). It consists of the following components:
-- Inputs ( $x^{(i)}_1,x^{(i)}_2$ ):The inputs to the perceptron are denoted as $x^{(i)}_1$ and $x^{(i)}_2$ 
+- **Inputs ( $x^{(i)}_1,x^{(i)}_2$ ):** The inputs to the perceptron are denoted as $x^{(i)}_1$ and $x^{(i)}_2$ 
 
-- Weights ( $w_1, w_2$ ): Each input feature has an associated weight which indicates the strength of the influence of that feature on the output. 
+- **Weights ( $w_1, w_2$ ):** Each input feature has an associated weight which indicates the strength of the influence of that feature on the output. 
 
-- Bias ( $b$ ): This is similar to the intercept term in a linear equation. It allows the activation threshold to be adjusted.
+- **Bias ( $b$ ):** This is similar to the intercept term in a linear equation. It allows the activation threshold to be adjusted.
 
-- Activation ( $z$ ): This is the weighted sum of the inputs plus the bias, which is the computation before the activation function is applied. Mathematically, this is represented as: $z= w_1x^{i}_1+w_2x^{i}_2+b $
-- Activation Function ( $\phi(z)$ ): The perceptron uses an activation function to transform the weighted sum into an output. If output will be 1 if $z$ is 0 or postive and will be -1 if $z$ is negetive.
+- **Activation ( $z$ ):** This is the weighted sum of the inputs plus the bias, which is the computation before the activation function is applied. Mathematically, this is represented as: $z= w_1x^{i}_1+w_2x^{i}_2+b $
+- **Activation Function ( $\phi(z)$ ):** The perceptron uses an activation function to transform the weighted sum into an output. If output will be 1 if $z$ is 0 or postive and will be -1 if $z$ is negetive.
 
-- Output ( $\hat{y}^{(i)}$ ): This is the final prediction of the perceptron for the input example $i$.
+- **Output ( $\hat{y}^{(i)}$ ):** This is the final prediction of the perceptron for the input example $i$.
 
 ## Algorithm
 
