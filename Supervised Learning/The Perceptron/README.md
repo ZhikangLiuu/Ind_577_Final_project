@@ -26,7 +26,6 @@ A Perceptron is a binary classifier that maps its input $x$ (a vector of real nu
    (a) Compute the output value $\hat{y}^{(i)}$ does not match the actual target $y^{(i)}$ as follow:
    
        $w = w+ \alpha(y^(i)-\hat{y}^{(i)})x^(i)$
-   
        $b = b+ \alpha(y^(i)-\hat{y}^{(i)})$
 
 ## Application
