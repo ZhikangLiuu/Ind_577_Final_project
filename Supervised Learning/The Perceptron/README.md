@@ -1,22 +1,29 @@
-# The Perceptron
+# Introduction of The Perceptron
+The Perceptron algorithm is a type of artificial neuron conceived by Frank Rosenblatt in 1957 and can be seen as the simplest form of a neural network. It's a foundational element of machine learning and has informed the development of more complex models.
 The perceptron is a single neuron model with sign activation function as depicted in the figure below.
 ![image](https://github.com/ZhikangLiuu/Ind_577_Final_project/assets/165843914/07114d5b-c988-4f94-856f-c8a6c43f02f6)
 
 A perceptron takes several binary inputs, multiplies each by a weight, sums them up, adds a bias (also known as the intercept), 
 and then passes the sum through an activation function to produce a single binary output.
 
-## Illustration
-
+## Model Structure
+A Perceptron is a binary classifier that maps its input $x$ (a vector of real numbers) to an output value $f(x)$ which is typically binary (0 or 1). It consists of the following components:
 - Inputs ( $x^{(i)}_1,x^{(i)}_2$ ):The inputs to the perceptron are denoted as $x^{(i)}_1$ and $x^{(i)}_2$ 
 
 - Weights ( $w_1, w_2$ ): Each input feature has an associated weight which indicates the strength of the influence of that feature on the output. 
 
 - Bias ( $b$ ): This is similar to the intercept term in a linear equation. It allows the activation threshold to be adjusted.
 
-- Pre-Activation ( $z$ ): This is the weighted sum of the inputs plus the bias, which is the computation before the activation function is applied. Mathematically, this is represented as: $z= w_1x^{i}_1+w_2x^{i}_2+b $
+- Activation ( $z$ ): This is the weighted sum of the inputs plus the bias, which is the computation before the activation function is applied. Mathematically, this is represented as: $z= w_1x^{i}_1+w_2x^{i}_2+b $
 - Activation Function ( $\phi(z)$ ): The perceptron uses an activation function to transform the weighted sum into an output. If output will be 1 if $z$ is 0 or postive and will be -1 if $z$ is negetive.
 
 - Output ( $\hat{y}^{(i)}$ ): This is the final prediction of the perceptron for the input example $i$.
+
+## Algorithm
+
+1. Initialize the weights and bias to zero or a small random value.
+2. For each training sample $x^(i)$ perform the following steps:
+   (a) Compute the output value
 
 ## Application
 The Perceptron has found various applications across different fields. Some of the key applications of the Perceptron include:
@@ -30,6 +37,9 @@ The Perceptron has found various applications across different fields. Some of t
 - Predictive Modeling: Perceptrons can be used for predictive modeling in various domains, including finance, marketing, and engineering. They can help predict outcomes based on input features, aiding in decision-making processes.
   
 - Signal Processing: Perceptrons can be applied in signal processing tasks, such as filtering noisy signals or detecting patterns in time-series data.
+
+
+
 
 
 ---
