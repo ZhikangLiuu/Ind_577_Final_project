@@ -27,7 +27,7 @@ A Perceptron is a binary classifier that maps its input $x$ (a vector of real nu
    (a) Compute the output value $\hat{y}^{(i)}$ using the current weights and bias.
    
    (b) Update the weights and bias if $\hat{y}^{(i)}$ does not match the actual target $y^{(i)}$ as follow:
-       $$w = w+ \alpha(y^{(i)}-\hat{y}^{(i)})x^{(i)}$$
+       $$w = w+ \alpha(y^{(i)}-\hat{y}^{(i)})x^{(i)}\\
        $$b = b+ \alpha(y^{(i)}-\hat{y}^{(i)})$$
    Here, $\alpha$ is the learning rate, a hyperparameter that determines the step size during the learning process.
    
@@ -44,7 +44,11 @@ The Perceptron has found various applications across different fields. Some of t
   
 - Signal Processing: Perceptrons can be applied in signal processing tasks, such as filtering noisy signals or detecting patterns in time-series data.
 
+## Limits 
 
+**Linear Separability:** A single Perceptron can only learn linearly separable patterns. It cannot model complex relationships or solve non-linear problems like the XOR problem.
+
+**No Probability Estimates:** Perceptrons do not output probabilities; they only provide a class label.So it can not be used to solve regression problem.
 
 ---
 **Example**:
