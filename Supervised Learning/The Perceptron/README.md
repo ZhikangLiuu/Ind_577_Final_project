@@ -27,8 +27,8 @@ A Perceptron is a binary classifier that maps its input $x$ (a vector of real nu
    (a) Compute the output value $\hat{y}^{(i)}$ using the current weights and bias.
    
    (b) Update the weights and bias if $\hat{y}^{(i)}$ does not match the actual target $y^{(i)}$ as follow:
-       $$w = w+ \alpha(y^{(i)}-\hat{y}^{(i)})x^{(i)}\\
-       $$b = b+ \alpha(y^{(i)}-\hat{y}^{(i)})$$
+       $$w = w+ \alpha(y^{(i)}-\hat{y}^{(i)})x^{(i)} \\
+         b = b+ \alpha(y^{(i)}-\hat{y}^{(i)})$$
    Here, $\alpha$ is the learning rate, a hyperparameter that determines the step size during the learning process.
    
 ## Application
