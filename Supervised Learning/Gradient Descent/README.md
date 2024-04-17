@@ -26,10 +26,15 @@ Gradient descent regression is a method used to minimize the cost function in re
 **1. Initialization:** The process begins by initializing the regression coefficients (weights) to random values or zeros. This starting point determines the first step the algorithm will take in the cost function landscape.
 
 **2. Cost Function:** In regression, the cost function is usually the Mean Squared Error (MSE), which calculates the average of the squares of the differences between the predicted and actual values. The goal of gradient descent is to minimize this MSE.
+
 **3. Gradient Calculation:** The gradient of the cost function with respect to each coefficient is calculated. This gradient is a vector that points in the direction of the steepest ascent of the cost function. Since the goal is to minimize the cost, gradient descent moves in the opposite direction.
+
 **4. Updating Coefficients:** The weights are updated by subtracting the product of the learning rate (a small, positive number) and the gradient from them. The learning rate determines the size of the steps taken towards the minimum; too small a rate slows down the convergence, while too large a rate can overshoot the minimum.
+
 **5. Iteration:** Steps 3 and 4 are repeated iteratively. In each iteration, the weights are adjusted slightly in the direction that reduces the cost function, progressively moving towards the minimum.
+
 **6. Convergence:** The algorithm converges when the cost function stops decreasing significantly, or a predetermined number of iterations is reached.
+
 **7. Stochastic and Mini-batch Variants:** In standard gradient descent, the gradient is calculated from the entire dataset, which can be computationally heavy. Stochastic Gradient Descent (SGD) mitigates this by calculating the gradient and updating weights using just one data point at a time. Mini-batch gradient descent strikes a balance by using a subset of the data for each update, offering efficiency and stability.
 
 ## Application
