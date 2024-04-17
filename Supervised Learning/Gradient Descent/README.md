@@ -1,4 +1,7 @@
-## Gradient Descent
+# Gradient Descent
+
+## Introduction
+Gradient Descent is a powerful iterative optimization method used to find parameter values that minimize a cost function, making it crucial in various machine learning models. It is generally attributed to Augustin-Louis Cauchy, who first suggested it in 1847 and also Jacques Hadamard independently proposed a similar method in 1907.
 
 The goal of Gradient Descent is to minimize a function and it is often the loss function given by your own optimization.
 Giving a convex function, you pick one point to start.Suppose your function is given by $y=f(x)= (x-2)^2+1$, initial 
