@@ -22,6 +22,41 @@ Welcome to the Logistic Regression project! In this Jupyter notebook, we delve i
 
 While efficient for binary classification, logistic regression assumes a linear relationship between features and can be sensitive to outliers.
 
+
+### Gradient Descent Logistic Regression
+
+Gradient descent logistic regression is an optimization algorithm for fitting a logistic regression model, typically used for binary classification tasks. The steps of the algorithm are as follows:
+
+1. **Model Definition**: We model the probability of a given input belonging to the default class (labeled "1") using a logistic function:
+
+   $$ P(Y=1|X) = \frac{1}{1 + e^{-(b_0 + b_1X)}} $$
+
+   where \( b_0 \) is the intercept, \( b_1 \) is the coefficient for the input feature \( X \), and the output is a probability that lies between 0 and 1.
+
+2. **Cost Function**: The cost function used in logistic regression is the binary cross-entropy loss or log loss, which is:
+
+   $$ J(b_0, b_1) = -\frac{1}{m} \sum_{i=1}^{m} [y^{(i)} \log(P(y^{(i)}|x^{(i)})) + (1-y^{(i)}) \log(1-P(y^{(i)}|x^{(i)}))] $$
+
+   Here, \( m \) is the number of training examples, \( y^{(i)} \) is the actual label, and \( P(y^{(i)}|x^{(i)}) \) is the predicted probability for the \( i \)-th sample.
+
+3. **Gradient Descent**: This process iteratively updates the parameters \( b_0 \) and \( b_1 \) to minimize the cost function using the update rules:
+
+   $$ b_0 := b_0 - \alpha \frac{\partial J}{\partial b_0} $$
+   $$ b_1 := b_1 - \alpha \frac{\partial J}{\partial b_1} $$
+
+   where \( \alpha \) is the learning rate.
+
+4. **Partial Derivatives**: The partial derivatives of the cost function with respect to \( b_0 \) and \( b_1 \) are:
+
+   $$ \frac{\partial J}{\partial b_0} = \frac{1}{m} \sum_{i=1}^{m} (P(y^{(i)}|x^{(i)}) - y^{(i)}) $$
+   $$ \frac{\partial J}{\partial b_1} = \frac{1}{m} \sum_{i=1}^{m} (P(y^{(i)}|x^{(i)}) - y^{(i)}) x^{(i)} $$
+
+5. **Updating the Parameters**: The update rules are applied until convergence, which occurs when changes to \( b_0 \) and \( b_1 \) are negligible.
+
+6. **Prediction**: For new input data, the model predicts the binary outcome based on the probability \( P(Y=1|X) \). If \( P(Y=1|X) \) is greater than 0.5, the predicted class is "1"; otherwise, it is "0".
+
+This algorithm is efficient for binary classification, but it assumes a linear relationship between the log odds and the features and can be sensitive to outliers.
+
 ## Application
 
 1.Medical Field: Predicting the likelihood of a patient having a disease based on observed characteristics of the patient (e.g., age, sex, body mass index, etc.).
