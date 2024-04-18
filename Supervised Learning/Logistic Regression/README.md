@@ -12,11 +12,11 @@ Welcome to the Logistic Regression project! In this Jupyter notebook, we delve i
 
    $$ P(Y=1|X) = \frac{1}{1 + e^{-(b_{0} + b_{1}X)}} $$
 
-   where $\( b_{0} \)$ is the intercept, \( $b_{1}$ \) is the coefficient for the input feature \( $X$ \), and the output is a probability that lies between 0 and 1.
+   where $b_{0} $ is the intercept,  $b_{1}$  is the coefficient for the input feature $X$ , and the output is a probability that lies between 0 and 1.
 
 2. **Cost Function**: The cost function used in logistic regression is the binary cross-entropy loss or log loss, which is:
 
-   $$ J(b_0, b_1) = -\frac{1}{m} \sum_{i=1}^{m} [y^{(i)} \log(P(y^{(i)}|x^{(i)})) + (1-y^{(i)}) \log(1-P(y^{(i)}|x^{(i)}))] $$
+   $$ J(b_{0}, b_{1}) = -\frac{1}{m} \sum_{i=1}^{m} [y^{(i)} \log(P(y^{(i)}|x^{(i)})) + (1-y^{(i)}) \log(1-P(y^{(i)}|x^{(i)}))] $$
 
    Here, \( m \) is the number of training examples, \( y^{(i)} \) is the actual label, and \( P(y^{(i)}|x^{(i)}) \) is the predicted probability for the \( i \)-th sample.
 
