@@ -41,8 +41,11 @@ This algorithm is efficient for binary classification, but it assumes a linear r
 ## Application
 
 1.Medical Field: Predicting the likelihood of a patient having a disease based on observed characteristics of the patient (e.g., age, sex, body mass index, etc.).
+
 2.Financial Sector: Assessing the creditworthiness of borrowers by predicting the probability of default based on their financial histories.
+
 3.Marketing: Determining the likelihood that a customer will purchase a product or subscribe to a service, which can help in targeting promotions and advertisements.We evaluate the performance of the logistic regression model by calculating accuracy, F1 score, and generating a confusion matrix. These metrics provide insights into the model's ability to classify albums into the desired categories.
+
 4.Manufacturing: Predicting the probability of failure of equipment or a production process to help in quality control.
 
 ## Advantages and Disadvantages
