@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Gradient Descent - Logistic Regression project! In this Jupyter notebook, we delve into the Gradient Descent optimization algorithm and its application in logistic regression. Logistic regression is a powerful method for binary classification problems, where the goal is to predict the probability of a binary outcome.
+Welcome to the Logistic Regression project! In this Jupyter notebook, we delve into the Gradient Descent optimization algorithm and its application in logistic regression. Logistic regression is a powerful method for binary classification problems, where the goal is to predict the probability of a binary outcome.
 
 ## Algorithm Overview
 
