@@ -67,8 +67,19 @@ The updating algorithm goes:
 
 ## Advantages and Disadvantages of Neural Networks
 
+### Advantages
+
 - **Non-linear Modeling:** MLPs can model complex non-linear relationships between inputs and outputs, which makes them very effective for problems where the relationship between variables is not linear.
 - **Flexibility and Customization:** The architecture of an MLP can be easily customized. You can adjust the number of layers and the number of neurons in each layer to suit your specific task.
 - **Good Generalization:** With proper training, MLPs can generalize well to new, unseen data, especially if regularization techniques (like dropout) are used to avoid overfitting.
 - **Applicability Across Domains:** MLPs are versatile and can be used for a variety of tasks including regression, classification, and even time series forecasting.
 - **Ability to Learn Feature Interactions:** MLPs are capable of learning interactions between features automatically, thanks to their layered structure and non-linear activation functions.
+
+### Disadvantages:
+- **Vulnerability to Overfitting:** Without proper regularization, MLPs can easily overfit, especially when the network architecture is too complex relative to the amount of available training data.
+- **Computationally Intensive:** Training MLPs can be computationally expensive, particularly as the number of layers and neurons increases. This can also lead to long training times.
+- **Sensitive to Feature Scaling:** MLPs require careful preprocessing of data, as they are sensitive to feature scaling. Inputs typically need to be normalized or standardized.
+- **Difficult to Interpret:** Unlike simpler models like linear regression, MLPs are often considered "black boxes" because their internal workings and the way they make decisions are not easily interpretable.
+- **Dependency on a Good Initialization and Configuration:** The performance of MLPs heavily depends on how the initial weights are set and how the network is configured (e.g., choosing the right activation function, setting the appropriate learning rate). Poor choices can lead to slow convergence or convergence to suboptimal solutions.
+- **Local Minima:** MLPs can get stuck in local minima during training, as gradient descent (used in backpropagation) is not guaranteed to find the global minimum.
+- **Difficulty Handling Sequential Data:** In their basic form, MLPs do not handle time-series or sequential input data well. More specialized types of neural networks, like RNNs and LSTMs, are often more appropriate for these tasks.
