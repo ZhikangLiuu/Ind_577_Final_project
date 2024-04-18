@@ -18,7 +18,7 @@ Welcome to the Logistic Regression project! In this Jupyter notebook, we delve i
 
    $$J(b_{0}, b_{1}) = -\frac{1}{m} \sum_{i=1}^{m} [y^{(i)} \log(P(y^{(i)}|x^{(i)})) + (1-y^{(i)}) \log(1-P(y^{(i)}|x^{(i)}))] $$
 
-   Here, $m$ is the number of training examples, \( y^{(i)} \) is the actual label, and \( P(y^{(i)}|x^{(i)}) \) is the predicted probability for the $i$-th sample.
+   Here, $m$ is the number of training examples, $y^{(i)}$ is the actual label, and $P(y^{(i)}|x^{(i)})$ is the predicted probability for the $i$-th sample.
 
 3. **Gradient Descent**: This process iteratively updates the parameters $b_{0}$  and $b_{1}$ to minimize the cost function using the update rules:
 
@@ -27,14 +27,14 @@ Welcome to the Logistic Regression project! In this Jupyter notebook, we delve i
 
    where \( \alpha \) is the learning rate.
 
-4. **Partial Derivatives**: The partial derivatives of the cost function with respect to \( b_{0} \) and \( b_{1} \) are:
+4. **Partial Derivatives**: The partial derivatives of the cost function with respect to $b_{0}$ and $b_{1}$ are:
 
    $$\frac{\partial J}{\partial b_{0}} = \frac{1}{m} \sum_{i=1}^{m} (P(y^{(i)}|x^{(i)}) - y^{(i)}) $$
    $$\frac{\partial J}{\partial b_{1}} = \frac{1}{m} \sum_{i=1}^{m} (P(y^{(i)}|x^{(i)}) - y^{(i)}) x^{(i)} $$
 
-5. **Updating the Parameters**: The update rules are applied until convergence, which occurs when changes to \( b_{0} \) and \( b_{1} \) are negligible.
+5. **Updating the Parameters**: The update rules are applied until convergence, which occurs when changes to $b_{0}$ and $b_{1}$ are negligible.
 
-6. **Prediction**: For new input data, the model predicts the binary outcome based on the probability \( P(Y=1|X) \). If \( P(Y=1|X) \) is greater than 0.5, the predicted class is "1"; otherwise, it is "0".
+6. **Prediction**: For new input data, the model predicts the binary outcome based on the probability $P(Y=1|X) $. If $P(Y=1|X) $ is greater than 0.5, the predicted class is "1"; otherwise, it is "0".
 
 This algorithm is efficient for binary classification, but it assumes a linear relationship between the log odds and the features and can be sensitive to outliers.
 
