@@ -1,68 +1,70 @@
-## Image Flattening
+# Neural Networks
 
-Simple **dense neural networks** pass feature vectors into the 0-th (the first) layer of the computational graph represented by the neural network structure as column vectors. This 0-th layer is essentially the same as with single neuron models. In order to feed our images into such a network we must **flatten** the matrix into a column vector.
-
-![image](https://github.com/ZhikangLiuu/Ind_577_Final_project/assets/165843914/5e616088-c30a-48fb-b7a7-c28ebcd76ac6)
-
-We can do this for each image matrix that we are considering by calling the ```flatten()``` method together with the ```reshape(784, 1)``` method to insure it is a column vector. Note, that each image matrix is 28 by 28, and so, $784 = 28 \times 28$ is the number of rows in the flattened matrix column vector. The numerical values in the flattened training and testing data matrices vary between 0 and 255. These large differences in possible values can lead to problems when training the weights and the biases of the neural network. A quick and dirty fix will be to scale all data to belong in the interval $(0, 1)$, i.e., divide the entries by the largest possible value; in this case 255. 
+The Multilayer Perceptron (MLP) is a versatile neural network used for various tasks, including image classification. It consists of interconnected layers and is capable of learning complex patterns in data through feedforward and backpropagation processes.
 
 
-### One-Hot code
----
-![image](https://github.com/ZhikangLiuu/Ind_577_Final_project/assets/165843914/fe965fee-5afe-4034-a2e2-e4c995508835)
----
+## Algorithm 
+MLP is an artificial neural network (ANN) with three main components: input layer, hidden layer(s), and output layer. Neurons in each layer are interconnected with weighted connections.
 
-The following code scales our training and testing data, reshapes our images and stores them in new variable names, and one-hot encodes the labels. 
+MLP operates in a feedforward and backpropagation manner:
+
+Feedforward: Input data is passed through the network, and each neuron's output is calculated as a weighted sum of inputs, followed by an activation function.
+
+Backpropagation: Network error is computed by comparing predictions to actual targets. Weights are then adjusted using gradient descent to minimize this error.
+
+Training continues iteratively until the network converges to make accurate predictions.
+
+MLP is versatile and widely used for various machine learning tasks due to its ability to model complex relationships in data.
+
+### Feedforward :
+1.Initialization: Begin with the input layer, where each neuron represents a feature of the input data.
+
+2.Weighted Sum Calculation: For each neuron in a hidden or output layer, calculate the weighted sum of its inputs. Each input is multiplied by a corresponding weight, and these products are summed up.
+
+3.Activation Function: Apply an activation function to the weighted sum obtained in step 2. Common activation functions include sigmoid, ReLU (Rectified Linear Unit), or tanh (hyperbolic tangent).
+
+4.Passing to the Next Layer: The result of the activation function becomes the input for the next layer. This process continues through the hidden layers until reaching the output layer.
+
+5.Output Layer: In the output layer, the activations represent the network's predictions or final output.
+
+6.Prediction:The final output of the network is used for making predictions, such as classifying an image or producing a numerical value.
+
+### Backpropagation :
+1.Initialization: Begin by initializing the neural network's weights randomly.
+
+2.Feedforward Pass: Perform a feedforward pass through the network to make predictions for a given input, following the steps outlined in the feedforward algorithm.
+
+3.Error Calculation: Calculate the error or loss between the predicted output and the actual target values. Common loss functions include mean squared error (MSE) for regression and cross-entropy for classification.
+
+4.Backpropagation: Start with the output layer and propagate the error backward through the network. This involves calculating the gradients of the loss with respect to the weights and biases in each layer.
+
+5.Gradient Descent: Update the weights and biases in the network using gradient descent or a similar optimization algorithm. The goal is to minimize the error by adjusting the weights in the direction that reduces the loss.
+
+6.Iterative Process: Repeat steps 2 to 5 for multiple iterations or epochs, allowing the network to learn and refine its weights gradually.
+
+7.Convergence: Continue the training until the network converges, meaning the error reaches a minimum or stabilizes at an acceptable level.
+
+8.Testing and Evaluation: After training, use the network to make predictions on new, unseen data to evaluate its performance.
 
 
-### Building the Network Architecture 
-For our purposes, we will build a multilayered **fully connected**, or **dense**, neural network with $L$ layers, $784$ input notes, $L-2$ hidden layers of arbitrary size, and $10$ output nodes. 
-
-<img src="multilayerPerceptron.jpg" alt="Drawing" style="width: 450px;"/>
-
-For our activation function, we will use the sigmoid function:
-
-* Sigmoid Function
-$$
-\sigma(z) = \frac{1}{1+e^{-z}}.
-$$
-
-For our cost function, we will use the Mean Sqaure Error cost:
-$$
-C(W, b) = \frac{1}{2}\sum_{k=1}^{10}(\hat{y}^{(i)}_k - y^{(i)}_k)^2.
-$$
-
-Our goal will be to write a custom Python class implementing our desired structure. However, before doing so, we first sequentually write functions to better understand the process of programming the following:
-
-* Initializing the weights and biases of each layer
-* The feedforward phase
-* Calculation of the cost function
-* Calculation of the gradient
-* Iterating stochastic gradient descent
-
-First we will define our sigmoid activation function, its derivative, and the mean squared error for a single instance of training data. Do this by running the following code. 
+Completion: The feedforward process is complete, and the network has transformed input data into a prediction or representation.
 
 
-
-### Feedforward Phase
-
-For $\ell = 1, \dots, L$, each layer $\ell$ in our network will have two phases, the preactivation phase $$\mathbf{z}^{\ell} = W^{\ell}\mathbf{a}^{\ell-1} + \mathbf{b}^{\ell},$$ and postactivation phase $$\mathbf{a}^{\ell} = \sigma(\mathbf{z}^{\ell}).$$ The preactivation phase consists of a weighted linear combination of postactivation values in the previous layer. The postactivation values consists of passing the preactivation value through an activation function elementwise. Note $\mathbf{a}^0 = \mathbf{x}^{(i)}$, where $\mathbf{x}^{(i)}$ is the current input data into our network. 
-
-We can test our activation functions and matrix dimensions by running the following code which manually implements the feedforward process on a neural network with the given dimensions.
-
-## Backpropogation Phase with Stochastic Gradient Descent 
-We are now ready to define a custom Python ```DenseNetwork``` class which initializes the weights and bias for the network, and implements stochastic gradient descent shown below:
-
-1. For each $i = 1, \dots, N$.
-2. Feedforward $\mathbf{x}^{(i)}$ into the network. 
-3. Compute $\delta^{L} = \nabla_aC\otimes \sigma'(\mathbf{z}^{L})$.
-4. For $\ell = L-1, \dots, 1$, compute $\delta^{\ell} = \big ( (\mathbf{w}^{\ell + 1})^{T} \delta^{\ell + 1} \Big )\otimes \sigma'(\mathbf{z}^{\ell})$.
-5. For $\ell = L, L-1, \dots, 1$, 
-
-$$
-w^{\ell} \leftarrow w^{\ell} - \alpha \delta^{\ell}(\mathbf{a}^{\ell-1})^{T}
-$$
-
-$$
-b^{\ell} \leftarrow b^{\ell} - \alpha \delta^{\ell}
-$$
+Update Strategy:
+There are some kinds of updating strategies to use, here we are going to use Stochastic Gradient Descent(SGD).
+The updating algorithm goes:
+- **Initialization**: Start with an initial set of weights for the neural network randomly or using predefined values.
+- **Iterative Process**:
+  1. Shuffle the training dataset randomly.
+  2. Split the dataset into mini-batches, each containing a subset of the training examples (usually between 1 and a few hundred).
+  3. For each mini-batch:
+     - **Forward Pass**: Perform a forward pass through the network to make predictions for the mini-batch.
+     - **Error Calculation**: Calculate the error or loss between the predicted output and the actual target values for the mini-batch.
+     - **Backpropagation**: Propagate the error backward through the network to compute the gradients of the loss with respect to the weights and biases.
+     - **Weight Update**: Update the weights and biases in the network using the computed gradients and a learning rate. The formula for weight update is typically:
+       ```
+       new_weight = old_weight - learning_rate * gradient
+       ```
+     - Repeat steps 1 to 3 for a specified number of epochs or until convergence criteria are met.
+- **Convergence**: Continue training until the algorithm converges, which means that the loss decreases to a satisfactory level or stabilizes.
+- **Testing and Evaluation**: After training, evaluate the neural network's performance on a separate test dataset to assess its ability to make accurate predictions
