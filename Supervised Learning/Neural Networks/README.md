@@ -64,3 +64,11 @@ The updating algorithm goes:
      - Repeat steps 1 to 3 for a specified number of epochs or until convergence criteria are met.
 - **Convergence**: Continue training until the algorithm converges, which means that the loss decreases to a satisfactory level or stabilizes.
 - **Testing and Evaluation**: After training, evaluate the neural network's performance on a separate test dataset to assess its ability to make accurate predictions
+
+## Advantages and Disadvantages of Neural Networks
+
+- **Non-linear Modeling:** MLPs can model complex non-linear relationships between inputs and outputs, which makes them very effective for problems where the relationship between variables is not linear.
+- **Flexibility and Customization:** The architecture of an MLP can be easily customized. You can adjust the number of layers and the number of neurons in each layer to suit your specific task.
+- **Good Generalization:** With proper training, MLPs can generalize well to new, unseen data, especially if regularization techniques (like dropout) are used to avoid overfitting.
+- **Applicability Across Domains:** MLPs are versatile and can be used for a variety of tasks including regression, classification, and even time series forecasting.
+- **Ability to Learn Feature Interactions:** MLPs are capable of learning interactions between features automatically, thanks to their layered structure and non-linear activation functions.
