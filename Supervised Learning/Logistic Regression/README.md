@@ -12,7 +12,7 @@ Welcome to the Logistic Regression project! In this Jupyter notebook, we delve i
 
    $$P(Y=1|X) = \frac{1}{1 + e^{-(b_{0} + b_{1}X)}} $$
 
-   where $b_{0} $ is the intercept,  $b_{1}$  is the coefficient for the input feature $X$ , and the output is a probability that lies between 0 and 1.
+   where $b_{0}$ is the intercept,  $b_{1}$  is the coefficient for the input feature $X$ , and the output is a probability that lies between 0 and 1.
 
 2. **Cost Function**: The cost function used in logistic regression is the binary cross-entropy loss or log loss, which is:
 
@@ -25,7 +25,7 @@ Welcome to the Logistic Regression project! In this Jupyter notebook, we delve i
    $$b_{0} := b_{0} - \alpha \frac{\partial J}{\partial b_{0}} $$
    $$b_{1} := b_{1} - \alpha \frac{\partial J}{\partial b_{1}} $$
 
-   where \( \alpha \) is the learning rate.
+   where $\alpha$ is the learning rate.
 
 4. **Partial Derivatives**: The partial derivatives of the cost function with respect to $b_{0}$ and $b_{1}$ are:
 
