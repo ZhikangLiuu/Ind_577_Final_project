@@ -62,9 +62,9 @@ The updating algorithm goes:
      - **Error Calculation**: Calculate the error or loss between the predicted output and the actual target values for the mini-batch.
      - **Backpropagation**: Propagate the error backward through the network to compute the gradients of the loss with respect to the weights and biases.
      - **Weight Update**: Update the weights and biases in the network using the computed gradients and a learning rate. The formula for weight update is typically:
-       
+         
        new_weight = old_weight - learning_rate * gradient
-       
+         
      - Repeat steps 1 to 3 for a specified number of epochs or until convergence criteria are met.
 - **Convergence**: Continue training until the algorithm converges, which means that the loss decreases to a satisfactory level or stabilizes.
 - **Testing and Evaluation**: After training, evaluate the neural network's performance on a separate test dataset to assess its ability to make accurate predictions
