@@ -34,7 +34,7 @@ Welcome to the Logistic Regression project! In this Jupyter notebook, we delve i
 
 5. **Updating the Parameters**: The update rules are applied until convergence, which occurs when changes to $b_{0}$ and $b_{1}$ are negligible.
 
-6. **Prediction**: For new input data, the model predicts the binary outcome based on the probability $P(Y=1|X) $. If $P(Y=1|X) $ is greater than 0.5, the predicted class is "1"; otherwise, it is "0".
+6. **Prediction**: For new input data, the model predicts the binary outcome based on the probability $P(Y=1|X) $. If $P(Y=1|X)$ is greater than 0.5, the predicted class is "1"; otherwise, it is "0".
 
 This algorithm is efficient for binary classification, but it assumes a linear relationship between the log odds and the features and can be sensitive to outliers.
 
