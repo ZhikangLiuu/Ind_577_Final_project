@@ -66,13 +66,13 @@ The updating algorithm goes:
 - **Testing and Evaluation**: After training, evaluate the neural network's performance on a separate test dataset to assess its ability to make accurate predictions
 
 ## Applications
-**- Credit Risk Analysis:** Financial institutions use MLPs to assess the risk of lending to individuals based on their credit history and other relevant factors
+- **Credit Risk Analysis:** Financial institutions use MLPs to assess the risk of lending to individuals based on their credit history and other relevant factors
 
-**- Medical Diagnosis:** MLPs assist in diagnosing diseases by analyzing patient data and identifying patterns that correlate with specific conditions.
+- **Medical Diagnosis:** MLPs assist in diagnosing diseases by analyzing patient data and identifying patterns that correlate with specific conditions.
 
-**- Medicines Discovery:** They can predict the effectiveness of new drugs by learning from data on chemical compounds and their biological activities.
+- **Medicines Discovery:** They can predict the effectiveness of new drugs by learning from data on chemical compounds and their biological activities.
 
-**- Motion Control:** MLPs help robots learn and perform complex movements and tasks autonomously by understanding and replicating motion patterns.
+- **Motion Control:** MLPs help robots learn and perform complex movements and tasks autonomously by understanding and replicating motion patterns.
 
 ## Advantages and Disadvantages of Neural Networks
 
