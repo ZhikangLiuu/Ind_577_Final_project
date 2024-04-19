@@ -22,6 +22,16 @@ Decision trees are constructed from only two elements — nodes and branches
 - **Stopping Criteria:** Determine when to stop the splitting process, typically based on factors like maximum depth, minimum samples per leaf, or purity threshold.
 - **Leaf Nodes:** Assign a class label or regression value to the leaf nodes based on the majority class or mean value of the samples in that leaf.
 
+## Application
+**1.Customer Segmentation:** Companies use decision trees to segment their customers based on behaviors and preferences to target marketing campaigns more effectively.
+
+**2.Fraud Detection:** In the financial sector, decision trees are employed to detect patterns of fraudulent transactions by comparing new transactions to known fraud characteristics
+
+**3.Disease Diagnosis:** Medical professionals use decision trees to diagnose diseases by systematically checking symptoms and other factors to reach a conclusive diagnosis.
+
+**4.Quality Control:** Decision trees are used to predict and analyze product failures based on production metrics and test results, facilitating proactive quality control.
+
+**5.Species Classification:** Biologists use decision trees to classify species based on features like habitat, diet, and physical characteristics.
 
 ## Advantages and disadvantages
 
