@@ -1,34 +1,40 @@
-# Lecture 9.1 Ensemble Methods
+#  Ensemble Methods
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RandyRDavila/Data_Science_and_Machine_Learning_Spring_2022/blob/main/Lecture_9/Lecture_9_1.ipynb)
-
-**Ensemble methods** are machine learning methods that aggregate the predictions of a group of base learners in order to form a single learning model. For example, imagine that each person in this [video](https://www.youtube.com/watch?v=iOucwX7Z1HU&t=203s) is a trained machine learning model and notice the average of their predictions is a much more accurate prediction that the individual predictions. In this lecture we will consider three types of ensemble concepts and methods. Namely, 
-1. **Hard Voting**
-
-2. **Bagging**
-
-3. **Random Forests**
-
-In the rest of this notebook we explore these concepts. 
+## Introduction
+Ensemble methods are a powerful approach in machine learning that involve combining multiple individual models to improve predictive performance.
 
 
-The term **bagging** referes to **b**ootstrap **agg**regating. **Bootstrapping** is a method of inferring results for a population from results found on a collection of smaller random samples of that population, using replacement during the sampling process. In the context of machine learning, a given set of machine learning model is trained respectively on random samples of training data with replacement (see the above figure), then the combined predictions of each model is **aggregated** and used as a single prediction. For regression tasks this would mean taking the average of the set of model prediction, and for classification taking the majority vote.  
+The idea behind ensembles is to harness the collective intelligence of diverse models to make more accurate and robust predictions. Two common types of ensemble methods are Bagging and Boosting.
 
-Generally speaking, the models we pick for ensembling will be "dumb learners", meaning models that are barely superior to randomly guessing. Individually the models will perform poorly, but collectively will perform well. 
+Bagging methods, like Random Forest, build multiple models independently and combine their predictions through averaging or voting, reducing overfitting and enhancing stability.
 
-But why is bagging useful? According to this [article](https://towardsdatascience.com/random-forests-algorithm-explained-with-a-real-life-example-and-some-python-code-affbfa5a942c):
+Boosting methods, such as AdaBoost and Gradient Boosting, sequentially train models, giving more weight to instances that were previously misclassified, resulting in models with superior predictive capabilities.
 
-> "Each model is trained on a different dataset, because they’re bootstrapped. So inevitably, each model will make different mistakes, and have a distinct error and variance. Both the error and variance get reduced in the aggregation step where, literally in the case of Regression, they are averaged out."
-
-The key idea here is the reduction in variance of the model. Again, from the above article:
-
-> "In a Regression task you can calculate actual variance of the prediction compared to the true targets. If the tree produces results that are too far off from its true targets, it has high-variance and therefore, it is overfit."
-
-To illustrate this concept we will once again consider the iris dataset; and compare the performance between a single decision tree model and a bagging classifier of many depth 1 decision trees, referred to as *decision stumps*. Run the following code cell to load the iris dataset and visualize the data. 
+Ensemble methods have become indispensable in many machine learning applications, consistently delivering state-of-the-art performance across various domains.
 
 
-## Random Forests 
-Technically speaking, the above bagging model is called a **Random forest**. Such a model exists inside the ```sklearn.ensemble``` module, and is the ```DecisionTreeClassifier``` class. However, the random forest algorithm used in training the ```RandomForestClassifier``` class introduces extra randomness when growing trees; instead of searching for the best feature when splitting a node, it searches for the best feature among a random subset of features. This results in a greater diversity of trees which results in even lower variance of the fit model. 
+## Algorithm 
+Bagging, short for Bootstrap Aggregating, is an ensemble method designed to enhance the predictive performance of machine learning models. It involves building multiple independent models and combining their predictions to reduce variance and improve model stability.
 
-Run the following code cell and compare the three models. 
+### Bagging Algorithm :
 
+- **Initialization**: Start with the original training dataset.
+- **Bootstrap Sampling**: Randomly select subsets of data (with replacement) to create multiple training datasets.
+- **Model Training**: Train individual models (e.g., decision trees) on each of these bootstrapped datasets.
+- **Prediction Aggregation**: Combine the predictions of these models through averaging or voting for classification tasks.
+- **Reduced Variance**: The ensemble's predictions are typically more robust and less prone to overfitting.
+- 
+## Application
+
+## Advantages and disadvantages
+
+### Advantages
+- **Reduced Variance**: Bagging reduces the variance of the model, making it less sensitive to noise in the data.
+- **Improved Generalization**: Bagging often leads to better generalization performance on unseen data.
+- **Simple Implementation**: The concept of bagging is relatively simple to implement, and it works well with various base models.
+- **Parallelization**: The independent models in bagging can be trained in parallel, speeding up the training process.
+
+### Disadvantages
+- **Limited Bias Reduction**: Bagging mainly reduces variance, and it may not significantly reduce the model's bias.
+- **Complexity**: For small datasets, the overhead of creating multiple subsets and models may not be justified.
+- **Ensemble Size**: The number of models in the ensemble needs to be carefully chosen to balance performance and computational resources.
