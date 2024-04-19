@@ -10,6 +10,8 @@ However, Decision Trees are prone to overfitting when they become overly complex
 
 Decision Trees are intuitive and interpretable models that are widely used in machine learning, especially when transparency and explainability are essential in decision-making processes.
 
+Decision trees are constructed from only two elements — nodes and branches,as you can see in the picture below.
+
 ![image](https://github.com/ZhikangLiuu/Ind_577_Final_project/assets/165843914/7de38845-78bd-4495-8e26-9758b02a1e22)
 
 ## Algorithm 
@@ -20,7 +22,6 @@ Decision Trees are intuitive and interpretable models that are widely used in ma
 - **Stopping Criteria:** Determine when to stop the splitting process, typically based on factors like maximum depth, minimum samples per leaf, or purity threshold.
 - **Leaf Nodes:** Assign a class label or regression value to the leaf nodes based on the majority class or mean value of the samples in that leaf.
 
-Decision trees are constructed from only two elements — nodes and branches.
 
 ## Advantages and disadvantages
 
