@@ -65,6 +65,15 @@ The updating algorithm goes:
 - **Convergence**: Continue training until the algorithm converges, which means that the loss decreases to a satisfactory level or stabilizes.
 - **Testing and Evaluation**: After training, evaluate the neural network's performance on a separate test dataset to assess its ability to make accurate predictions
 
+## Applications
+**1.Credit Risk Analysis:** Financial institutions use MLPs to assess the risk of lending to individuals based on their credit history and other relevant factors
+
+**2.Medical Diagnosis:** MLPs assist in diagnosing diseases by analyzing patient data and identifying patterns that correlate with specific conditions.
+
+**3.Medicines Discovery:** They can predict the effectiveness of new drugs by learning from data on chemical compounds and their biological activities.
+
+**4.Motion Control:** MLPs help robots learn and perform complex movements and tasks autonomously by understanding and replicating motion patterns.
+
 ## Advantages and Disadvantages of Neural Networks
 
 ### Advantages
