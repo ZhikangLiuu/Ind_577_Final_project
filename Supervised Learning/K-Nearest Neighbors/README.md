@@ -31,6 +31,7 @@ Here's a graph illustrating the k-Nearest Neighbors (k-NN) algorithm. In this ex
 - The class of the new point is determined based on the majority class of its nearest neighbors.
 - In this case, the k-NN algorithm considers the 3 nearest neighbors to classify the new point.
 
+![image](https://github.com/ZhikangLiuu/Ind_577_Final_project/assets/165843914/a875169b-0e78-4ea5-b0e3-7317cad92384)
 
 ## Advantages and Disadvantages
 
