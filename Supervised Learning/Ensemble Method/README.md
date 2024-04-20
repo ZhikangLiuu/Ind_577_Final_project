@@ -24,13 +24,6 @@ Bagging, short for Bootstrap Aggregating, is an ensemble method designed to enha
 - **Prediction Aggregation**: Combine the predictions of these models through averaging or voting for classification tasks.
 - **Reduced Variance**: The ensemble's predictions are typically more robust and less prone to overfitting.
   
-## Application
-
-- **Customer Segmentation:** In marketing, ensemble methods can be applied to segment customers based on their behavior, preferences, or demographics. This segmentation can then be used for targeted marketing campaigns or personalized recommendations.
-- **Predictive Maintenance:** Ensemble methods are valuable in predictive maintenance applications, where the goal is to predict equipment failures or maintenance needs in advance. By combining multiple models, ensemble techniques can provide more accurate predictions of when maintenance is required.
-- **Social Media Analysis:** Ensemble methods can be used to analyze social media data for sentiment analysis, topic modeling, or user profiling. By combining multiple models, ensemble techniques can provide more accurate insights into user behavior and preferences.
-- **Feature Selection and Dimensionality Reduction:** Ensemble methods can also be used for feature selection and dimensionality reduction. Techniques like Random Forests can provide insights into feature importance, helping to identify the most relevant variables for prediction.
-
 
 ## Advantages and disadvantages
 
@@ -69,3 +62,11 @@ Random Forest is a popular ensemble learning method that builds upon the princip
 - **Complexity**: Random Forest models can become complex with a large number of trees and features.
 - **Less Interpretability**: While Random Forest provides feature importance, the ensemble's decision-making process may be less interpretable than a single decision tree.
 - **Slower Inference**: Predictions can be slower due to the aggregation of multiple decision trees.
+
+## Application
+
+- **Customer Segmentation:** In marketing, ensemble methods can be applied to segment customers based on their behavior, preferences, or demographics. This segmentation can then be used for targeted marketing campaigns or personalized recommendations.
+- **Predictive Maintenance:** Ensemble methods are valuable in predictive maintenance applications, where the goal is to predict equipment failures or maintenance needs in advance. By combining multiple models, ensemble techniques can provide more accurate predictions of when maintenance is required.
+- **Social Media Analysis:** Ensemble methods can be used to analyze social media data for sentiment analysis, topic modeling, or user profiling. By combining multiple models, ensemble techniques can provide more accurate insights into user behavior and preferences.
+- **Feature Selection and Dimensionality Reduction:** Ensemble methods can also be used for feature selection and dimensionality reduction. Techniques like Random Forests can provide insights into feature importance, helping to identify the most relevant variables for prediction.
+
