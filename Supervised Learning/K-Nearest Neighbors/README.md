@@ -33,6 +33,14 @@ Here's a graph illustrating the k-Nearest Neighbors (k-NN) algorithm. In this ex
 
 ![image](https://github.com/ZhikangLiuu/Ind_577_Final_project/assets/165843914/a875169b-0e78-4ea5-b0e3-7317cad92384)
 
+
+## Application
+- Spam detection: Classifying emails as spam or non-spam based on their content and characteristics.
+- Image classification: Identifying objects in images (e.g., cats vs. dogs) based on features extracted from the images.
+- House price prediction: Predicting the selling price of a house based on features such as area, number of bedrooms, location, etc.
+- Demand forecasting: Predicting the demand for a product or service based on historical sales data and other factors.
+- Intrusion detection: Detecting suspicious activities or attacks in computer networks based on network traffic data.
+
 ## Advantages and Disadvantages
 
 ### Advantages
