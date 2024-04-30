@@ -44,10 +44,20 @@ The Perceptron has found various applications across different fields. Some of t
   
 - Signal Processing: Perceptrons can be applied in signal processing tasks, such as filtering noisy signals or detecting patterns in time-series data.
 
-## Limits 
+## Advantages
 
-**Linear Separability:** A single Perceptron can only learn linearly separable patterns. It cannot model complex relationships or solve non-linear problems like the XOR problem.
+- **Simplicity:** The perceptron is one of the simplest forms of a neural network, which makes it easy to understand and implement. It is essentially a linear classifier used for binary classification tasks.
 
-**No Probability Estimates:** Perceptrons do not output probabilities; they only provide a class label.So it can not be used to solve regression problem.
+- **Efficiency:** Training a perceptron is computationally inexpensive because it uses a simple learning algorithm, often called the perceptron learning rule. This rule adjusts the weights based on the error of the output compared to the expected result, making only small updates for each training example.
+
+- **Online Learning:** The perceptron can learn and adapt as new data comes in, without needing to retrain from scratch. This makes it suitable for systems that receive data sequentially and need incremental updates.
+
+## Disadvantages
+
+- **Linear Separability Limitation:** The perceptron can only classify linearly separable data sets. If the data cannot be separated by a straight line, the perceptron will not converge to a solution, which significantly limits its applicability.
+- **Lack of Probability Estimation:** Perceptrons do not output probabilities but rather make hard classifications. This can be a limitation in applications where you need to know the confidence of predictions.
+- **Prone to Overfitting:** If the training data is noisy or if the perceptron is trained for too many epochs, it can overfit to the training data, leading to poor generalization to new data.
+
+
 
 
