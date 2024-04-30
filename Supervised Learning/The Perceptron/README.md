@@ -55,7 +55,9 @@ The Perceptron has found various applications across different fields. Some of t
 ## Disadvantages
 
 - **Linear Separability Limitation:** The perceptron can only classify linearly separable data sets. If the data cannot be separated by a straight line, the perceptron will not converge to a solution, which significantly limits its applicability.
+  
 - **Lack of Probability Estimation:** Perceptrons do not output probabilities but rather make hard classifications. This can be a limitation in applications where you need to know the confidence of predictions.
+  
 - **Prone to Overfitting:** If the training data is noisy or if the perceptron is trained for too many epochs, it can overfit to the training data, leading to poor generalization to new data.
 
 
