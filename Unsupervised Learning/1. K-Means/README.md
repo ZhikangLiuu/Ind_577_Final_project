@@ -13,8 +13,11 @@ The k-Means algorithm comprises several key steps:
 
 ## Application
 **1.Customer Segmentation:** Businesses use K-Means to group customers based on purchasing behavior, demographics, or preferences to tailor marketing strategies to each segment.
+
 **2.Image Segmentation:** In image processing, K-Means can be used to segment an image into different parts based on the color data, which is useful for object recognition or tracking.
+
 **3.Data Preprocessing:** K-Means is often used in data preprocessing to create clusters that can simplify complex datasets, making them easier to analyze and visualize.
+
 **4.Anomaly Detection:** By clustering data, K-Means helps identify outliers or anomalies in datasets, which are not well-aligned with any of the defined clusters.
 
 ## Advantages and disadvantages
