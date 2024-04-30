@@ -44,7 +44,9 @@ The Perceptron has found various applications across different fields. Some of t
   
 - Signal Processing: Perceptrons can be applied in signal processing tasks, such as filtering noisy signals or detecting patterns in time-series data.
 
-## Advantages
+## Advantages and Disadvantages
+
+### Advantages
 
 - **Simplicity:** The perceptron is one of the simplest forms of a neural network, which makes it easy to understand and implement. It is essentially a linear classifier used for binary classification tasks.
 
@@ -52,7 +54,7 @@ The Perceptron has found various applications across different fields. Some of t
 
 - **Online Learning:** The perceptron can learn and adapt as new data comes in, without needing to retrain from scratch. This makes it suitable for systems that receive data sequentially and need incremental updates.
 
-## Disadvantages
+### Disadvantages
 
 - **Linear Separability Limitation:** The perceptron can only classify linearly separable data sets. If the data cannot be separated by a straight line, the perceptron will not converge to a solution, which significantly limits its applicability.
   
