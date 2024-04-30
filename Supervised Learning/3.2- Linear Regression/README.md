@@ -11,8 +11,7 @@ C(\mathbf{w}, b) = \frac{1}{2N}\sum_{i=1}^{N}\Big(\hat{y}^{(i)} - y^{(i)}\Big)^2
 $$
 
 - **2. Minimize loss function by gradient descent:**
-  -- do
-  
+
 $$
 w_1 \leftarrow w_1 - \alpha \frac{\partial C}{\partial w_1}
 $$
