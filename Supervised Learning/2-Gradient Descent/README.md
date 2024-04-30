@@ -3,9 +3,7 @@
 ## Introduction
 Gradient Descent is a powerful iterative optimization method used to find parameter values that minimize a cost function, making it crucial in various machine learning models. It is generally attributed to Augustin-Louis Cauchy, who first suggested it in 1847 and also Jacques Hadamard independently proposed a similar method in 1907.
 
-It's iterative in nature; starting from a random point on the function curve, it moves towards the minimum value of the curve by taking steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point.
-
-If correctly implemented, it can efficiently find the minimum of a wide range of functions, making it particularly useful in training machine learning models like linear regression and neural networks.
+It's iterative in nature; starting from a random point on the function curve, it moves towards the minimum value of the curve by taking steps proportional to the negative of the gradient (or approximate gradient) of the function at the current point.If correctly implemented, it can efficiently find the minimum of a wide range of functions, making it particularly useful in training machine learning models like linear regression and neural networks.
 
 
 ## Algorithm 
