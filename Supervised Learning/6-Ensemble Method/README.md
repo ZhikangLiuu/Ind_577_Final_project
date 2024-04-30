@@ -4,11 +4,11 @@
 Ensemble methods are a powerful approach in machine learning that involve combining multiple individual models to improve predictive performance.
 The idea behind ensembles is to harness the collective intelligence of diverse models to make more accurate and robust predictions. Two common types of ensemble methods are Bagging and Boosting.
 
-Bagging methods, like Random Forest, build multiple models independently and combine their predictions through averaging or voting, reducing overfitting and enhancing stability.
+**Bagging methods**, like Random Forest, build multiple models independently and combine their predictions through averaging or voting, reducing overfitting and enhancing stability.
 
-Boosting methods, such as AdaBoost and Gradient Boosting, sequentially train models, giving more weight to instances that were previously misclassified, resulting in models with superior predictive capabilities.
+**Boosting methods**, such as AdaBoost and Gradient Boosting, sequentially train models, giving more weight to instances that were previously misclassified, resulting in models with superior predictive capabilities.
 
-Ensemble methods have become indispensable in many machine learning applications, consistently delivering state-of-the-art performance across various domains.
+**Ensemble methods** have become indispensable in many machine learning applications, consistently delivering state-of-the-art performance across various domains.
 
 
 ## Algorithm 
