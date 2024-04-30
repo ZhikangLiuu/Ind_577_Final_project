@@ -20,10 +20,13 @@ $$
 b \leftarrow b - \alpha \frac{\partial C}{\partial b}
 $$
     
-- **1. Find a loss function:**
-- **1. Find a loss function:**
-- **1. Find a loss function:**
+There are two kinds of Gradient Descent methods：
+- Batch Gradient Descent：
+  Batch Gradient Descent computes the gradient over the entire training dataset and updates the weights in one go.
 
+- Stochastic Gradient Descent
+  Stochastic Gradient Descent updates weights and biases for each training example, which allows for faster convergence and can handle larger datasets.
+  
   
 ## Application
 **1.Customer Segmentation:**
