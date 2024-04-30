@@ -4,9 +4,23 @@
 linear regression is a model which estimates the linear relationship between a scalar response and one or more explanatory variables (also known as dependent and independent variables).In linear regression, the relationships are modeled using linear predictor functions whose unknown model parameters are estimated from the data. Such models are called linear models.
 
 ## Algorithm 
-- **Initialization:**
+- **1. Find a loss function:**
+$$
+C(\mathbf{w}, b) = \frac{1}{2N}\sum_{i=1}^{N}\Big(\hat{y}^{(i)} - y^{(i)}\Big)^2. 
+$$
+- **2. Minimize loss function by gradient descent:**
+  -- do $$
+        w_1 \leftarrow w_1 - \alpha \frac{\partial C}{\partial w_1}
+        $$
+        $$
+        b \leftarrow b - \alpha \frac{\partial C}{\partial b}
+        $$
+    
+- **1. Find a loss function:**
+- **1. Find a loss function:**
+- **1. Find a loss function:**
 
-- 
+  
 ## Application
 **1.Customer Segmentation:**
 
