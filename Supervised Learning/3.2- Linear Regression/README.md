@@ -29,22 +29,22 @@ There are two kinds of Gradient Descent methods：
   
   
 ## Application
-**1.Customer Segmentation:**
+- **Predicting Stock Prices:** Forecasting future stock prices based on historical data.
+- **Weather Forecasting:** Predicting temperatures, rainfall, and other weather conditions.
+- **Risk Assessment:** Determining the risk factors associated with investment portfolios.
 
 
 ## Advantages and disadvantages
 
 ### Advantages
-- **Interpretability:**
-
-
+- **Simplicity:** Linear regression is straightforward to understand and interpret, making it easier for non-technical stakeholders to grasp the model's predictions.
+- **Efficiency:** It is computationally inexpensive, making it a quick tool for predictions, especially with a moderate to a small amount of data.
+- **Less Data Requirement:** Linear regression can perform well with a small amount of data, unlike complex models that require large datasets to train effectively.
 
 ### Disadvantages
-- **Overfitting:**
+- **Assumption of Linearity:** Linear regression assumes that there is a linear relationship between the input variables and the output variable, which might not always be the case, particularly in real-world scenarios where relationships can be more complex.
+- **Prone to Outliers:** Linear regression models are highly sensitive to outlier observations, which can significantly affect the slope of the regression line and, consequently, the predictions.
+- **Underfitting:** Due to its simplicity, linear regression is often prone to underfitting, where the model fails to capture the underlying trend of the data adequately, especially if that trend is complex.
 
-
-# Single Neuron Linear Regression Model
-
-Linear regression via a single neuron involves estimating a function \( f:\mathcal{X} \rightarrow \mathcal{Y} \) that maps input features to a continuous output. This model assumes a linear relationship between inputs and outputs. The neuron uses a linear activation function, and the optimization objective is to minimize the mean squared error between predicted and actual outputs.
 
 
