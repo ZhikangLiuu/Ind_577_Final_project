@@ -9,7 +9,7 @@ MLP is an artificial neural network (ANN) with three main components: input laye
 - **Feedforward:** Input data is passed through the network, and each neuron's output is calculated as a weighted sum of inputs, followed by an activation function.
 - **Backpropagation:** Network error is computed by comparing predictions to actual targets. Weights are then adjusted using gradient descent to minimize this error.
 
-Training continues iteratively until the network converges to make accurate predictions.MLP is versatile and widely used for various machine learning tasks due to its ability to model complex relationships in data.
+MLP is versatile and widely used for various machine learning tasks due to its ability to model complex relationships in data.
 
 ### Feedforward :
 **1.Initialization:** Begin with the input layer, where each neuron represents a feature of the input data.
