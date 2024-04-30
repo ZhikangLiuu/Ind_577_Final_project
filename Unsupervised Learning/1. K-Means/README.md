@@ -1,7 +1,7 @@
 # K-Means Clustering
 
 ## Introduction
-k-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. 
+k-Means Clustering is a widely used unsupervised machine learning algorithm that is employed for partitioning data into clusters based on similarity patterns. The goal of k-Means is to group data points into clusters in such a way that points within the same cluster are more similar to each other than to those in other clusters. It is a versatile technique applicable in various domains, such as customer segmentation, image compression, and anomaly detection.
 
 
 ## Algorithm 
