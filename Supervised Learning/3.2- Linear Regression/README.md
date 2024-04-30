@@ -5,18 +5,21 @@ linear regression is a model which estimates the linear relationship between a s
 
 ## Algorithm 
 - **1. Find a loss function:**
+  
 $$
 C(\mathbf{w}, b) = \frac{1}{2N}\sum_{i=1}^{N}\Big(\hat{y}^{(i)} - y^{(i)}\Big)^2. 
 $$
+
 - **2. Minimize loss function by gradient descent:**
   -- do
-        $$
-        w_1 \leftarrow w_1 - \alpha \frac{\partial C}{\partial w_1}
-        $$
   
-        $$
-        b \leftarrow b - \alpha \frac{\partial C}{\partial b}
-        $$
+$$
+w_1 \leftarrow w_1 - \alpha \frac{\partial C}{\partial w_1}
+$$
+  
+$$
+b \leftarrow b - \alpha \frac{\partial C}{\partial b}
+$$
     
 - **1. Find a loss function:**
 - **1. Find a loss function:**
