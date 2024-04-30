@@ -1,7 +1,9 @@
 # INDE 577 Final Project - Data Science and Machine Learning
 
 **Name** :Zhikang Liu
+
 **email** :zl161@rice.edu
+
 **Instructor**: Randy R. Davila
 
 ## Course Description
