@@ -20,6 +20,7 @@ In this section, we have implemented various supervised learning algorithms:
 
 - **Perceptron**: A simple linear classifier.
 - **Logistic Regression**: A binary and multiclass classification algorithm.
+- **Linear Regression**: A regression algorithm.
 - **Neural Network (MLP)**: Multi-layer perceptron for deep learning.
 - **Decision/Regression Trees**: Tree-based models for classification and regression.
 - **Ensemble Learning**: Ensemble methods like Random Forest.
