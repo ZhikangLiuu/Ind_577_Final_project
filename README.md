@@ -42,6 +42,7 @@ The datasets folder contains various datasets used in our implementations:
 - **MNIST Train**: The training set of the MNIST handwritten digit dataset.
 - **MNIST Test**: The testing set of the MNIST handwritten digit dataset.
 - **Iris_dataset**: Three different species of iris flowers.
+- **Wine Quality dataset**: Some wine-related dataset.
 
 ## Repository Navigation
 
