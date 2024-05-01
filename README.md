@@ -19,7 +19,7 @@ This repository is organized into four main sections, each containing detailed i
 In this section, we have implemented various supervised learning algorithms:
 
 - **Perceptron**: A simple linear classifier.
-- **Gradient Descent**: An optimatation algorithm
+- **Gradient Descent**: An optimatation algorithm.
 - **Logistic Regression**: A binary and multiclass classification algorithm.
 - **Linear Regression**: A regression algorithm.
 - **Neural Network (MLP)**: Multi-layer perceptron for deep learning.
